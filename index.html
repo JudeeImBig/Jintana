@@ -1,62 +1,192 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>แนะนำตัว</title>
-    <style>
-        body {
-            font-family: 'Sarabun', sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            padding: 40px;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>แนะนำตัว - นายภาสกร ประเสริฐสุข</title>
 
-        .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 30px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
 
-        img.profile {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #0066cc;
-            margin-bottom: 20px;
-        }
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background: linear-gradient(135deg, #DA2128 5%,#c2e9fb 100%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      color: #222;
+    }
 
-        h1 {
-            color: #0066cc;
-        }
+    .top-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
 
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-            text-align: left;
-        }
-    </style>
+    .container {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      margin: 20px 0;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    img.profile {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #4a90e2;
+      box-shadow: 0 5px 15px rgba(74, 144, 226, 0.5);
+      margin-bottom: 25px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    img.profile:hover {
+      box-shadow: 0 5px 25px rgba(74, 144, 226, 0.8);
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #4a90e2;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-top: 0;
+    }
+
+    p strong {
+      color: #4a90e2;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Sarabun', sans-serif;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #357ab8;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      img.profile {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- รูปภาพประจำตัว -->
-        <img src="IMG_2643.HEIC">
 
-        <h1>สวัสดีครับ</h1>
-        <p><strong>ชื่อ:</strong> นายภาสกร ประเสริฐสุข</p>
-        <p><strong>โรงเรียน:</strong> โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี</p>
-        <p><strong>ทักษะ:</strong> เล่นเกมเก่ง </p>
-        <ul>
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>ตัดต่อวิดีโอด้วย Premiere Pro</li>
-        </ul>
+  <!-- ข้อมูลส่วนตัว -->
+  <div class="container">
+    <img class="profile" src="FullSizeRender 1.jpg" alt="รูปโปรไฟล์" />
+    <h1>นายภาสกร ประเสริฐสุข</h1>
+    <p>
+      นักเรียนผู้มีความตั้งใจอยากเข้าศึกษาต่อในคณะ
+      <strong>วิศวะโยธา</strong><br />
+      เพราะเชื่อว่า "จะสามารถพัฒนาบ้านเมืองให้ดีขึ้นได้"
+    </p>
+  </div>
+
+ <!-- ผลงาน -->
+<div class="container" id="portfolio">
+  <h2>🎖️ ผลงาน</h2>
+  <div id="portfolio-content">
+    <div class="work-item">
+    
+
     </div>
-</body>
+  </div>
+  <!-- ปุ่มในหน้าแรก -->
+<button onclick="location.href='portfolio-detail.html'">ดูผลงานเพิ่มเติม</button>
+
+
+<script>
+  function goToPortfolio() {
+    window.location.href = "portfolio.html";
+  }
+</script>
+
+</div>
+
+  <!-- ประวัติการศึกษา -->
+<div class="container" id="education">
+  <h2>🎓 การศึกษา</h2>
+  
+  <!-- ปุ่มในหน้าแรก -->
+<button onclick="location.href='school.html'">รายละเอียด</button>
+</div>
+
+  <!-- ทักษะ -->
+  <div class="container">
+    <h2>🧠 ทักษะ</h2>
+    <p><strong>Hard Skills:</strong> มีทักษะการเล่นเกม</p>
+    <p><strong>Soft Skills:</strong> ใจเย็น ฉลาด</p>
+  </div>
+<!-- แรงบันดาลใจ -->
+  <div class="container">
+    <h2> แรงบันดาลใจ</h2>
+    <button onclick="location.href='SOP.html'">รายละเอียด</button>
+  </div>
+  <!-- ติดต่อ -->
+  
+    <p><strong>อีเมล:</strong> 34953.skn@skn.ac.th</p>
+    <p><strong>โซเชียลมีเดีย:</strong> IG: q_xm0z</p>
+  </div>
+<script>
+  let eduStep = 0;
+
+  function nextEducation() {
+    const eduContent = document.getElementById('edu-content');
+    eduStep++;
+
+   }
+  </script>
 </html>
