@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>กิจกรรมปลูกต้นไม้เพื่อสิ่งแวดล้อม</title>
+  <meta charset="UTF-8" />
+  <title>ผลงานเพิ่มเติม - นายเพชรรังสี</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Sarabun', sans-serif;
-      background-color: #f0f8ff;
-      margin: 0;
-      padding: 20px;
+      padding: 40px;
+      background: linear-gradient(to right, #dbeeff, #f0f8ff);
+      color: #333;
+      animation: fadeIn 1s ease-in;
     }
-    header {
-      background-color: #228B22;
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2a5d9f;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: #1c3f74;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2a5d9f;
       color: white;
-      padding: 20px;
-      text-align: center;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-    section {
-      margin-top: 20px;
-    }
-    .highlight {
-      color: #006400;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
+
+    button:hover {
+      background-color: #1c3f74;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>กิจกรรมปลูกต้นไม้เพื่อสิ่งแวดล้อม</h1>
-    <p>ร่วมกันสร้างโลกสีเขียว 🌱</p>
-  </header>
-
-  <section>
-    <h2>รายละเอียดกิจกรรม</h2>
-    <p>กิจกรรมนี้จัดขึ้นเพื่อส่งเสริมการอนุรักษ์ธรรมชาติและลดภาวะโลกร้อน โดยผู้เข้าร่วมจะได้เรียนรู้วิธีการปลูกต้นไม้ที่ถูกต้อง พร้อมทั้งลงมือปลูกต้นไม้ในพื้นที่ที่กำหนด</p>
-  </section>
-
-  <section>
-    <h2>วันและเวลา</h2>
-    <p><span class="highlight">วันเสาร์ที่ 21 กันยายน 2568</span> เวลา 08:30 - 12:00 น.</p>
-  </section>
-
-  <section>
-    <h2>สถานที่จัดกิจกรรม</h2>
-    <p>สวนสาธารณะเฉลิมพระเกียรติ จังหวัดนนทบุรี</p>
-  </section>
-
-  <section>
-    <h2>สิ่งที่ต้องเตรียม</h2>
-    <ul>
-      <li>หมวกและครีมกันแดด</li>
-      <li>รองเท้าผ้าใบ</li>
-      <li>น้ำดื่มส่วนตัว</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>สอบถามข้อมูลเพิ่มเติม: โทร 02-123-4567 หรืออีเมล green@activity.org</p>
-  </footer>
-
+  <div class="container">
+    <h1>🌟 กิจกรรมธารน้ำใจ 🌟</h1>
+    <img src="IMG_7470.jpeg" alt="ภาพโครงงาน" />
+    <p><strong>รายละเอียด:</strong> นำสิ่งของไปบริจาคและทำกิจกรรมร่วมกับน้องๆ ณ โรงเรียนวัดตำหนักเหนือ</p>
+    <p><strong>ปีที่จัดทำ:</strong> 2568</p>
+    <button onclick="history.back()">ย้อนกลับ</button>
+  </div>
 </body>
 </html>
